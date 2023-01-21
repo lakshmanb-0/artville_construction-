@@ -19,7 +19,7 @@ export const Header = () => {
           construction of houses we give preference to modern architecture. Your
           comfort and safety are our priority.
         </h6>
-        <button className="seemorebtn hover:scale-95">REQUEST A CALL</button>
+        <button className="seemorebtn">REQUEST A CALL</button>
       </div>
     </main>
   );

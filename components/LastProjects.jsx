@@ -12,7 +12,7 @@ export const LastProjects = () => {
           modern standards of beauty and convenience. At the same time, we are
           different from others. Our specialists think through every detail.
         </div>
-        <div className="mt-10 border-b border-lightblack px-4 py-4 sm:border rounded max-w-[27rem]">
+        <div className="mt-10 border-b border-borderColor px-4 py-4 sm:border rounded max-w-[27rem]">
           <h6 className="text-xl font-semibold text-black ">CITY OF DREAMS</h6>
           <Image
             src="https://images.unsplash.com/photo-1481253127861-534498168948?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1373&q=80"
@@ -29,7 +29,7 @@ export const LastProjects = () => {
           </p>
         </div>
         <section className="flex flex-col items-end ">
-          <div className="mt-10 border-b border-lightblack px-4 py-4 sm:border rounded max-w-[27rem] mb-10">
+          <div className="mt-10 border-b border-borderColor px-4 py-4 sm:border rounded max-w-[27rem] mb-10">
             <h6 className="text-xl font-semibold text-black ">NEW PLAZA</h6>
             <Image
               src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1310&q=80"

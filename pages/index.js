@@ -2,6 +2,10 @@ import Head from 'next/head'
 import { Header } from '../components/Header'
 import { LastProjects } from '../components/LastProjects'
 import Navbar from '../components/Navbar'
+import { Offer } from '../components/Offer'
+import Advantages from '../components/Advantages'
+import { accordion } from '../Data/data'
+import { LastNews } from '../components/LastNews'
 
 export default function Home() {
   return (
@@ -15,6 +19,15 @@ export default function Home() {
       <Navbar />
       <Header />
       <LastProjects />
+      <Offer />
+      <div className='max-w-[1600px] mx-auto my-5'>
+        <h1 className='text-4xl font-bold px-5'>OUR ADVANTAGES</h1>
+        {accordion.map(acc => (
+          <Advantages key={acc.id} data={acc} />
+        ))}
+      </div>
+      <LastNews />
+
 
     </>
   )
