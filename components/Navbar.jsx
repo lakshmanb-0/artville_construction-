@@ -1,9 +1,15 @@
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 
 function Navbar() {
   const [hamburger, setHamburger] = useState(false);
   const [nav, setnav] = useState(false);
+  const router = useRouter();
+  const Path = router.asPath;
+  const navbar = ["home", "about Us", "our Projects", "plaza", "contacts"];
+
   useEffect(() => {
     let windowWidth = window.innerWidth;
     windowWidth <= 1023 && setHamburger(true);
@@ -22,37 +28,46 @@ function Navbar() {
       <nav className="border-b-2 border-borderColor flex justify-between items-center max_width px-4 py-4 ">
         <div className="flex space-x-3 items-center">
           <div className="rounded-full bg-red h-8 w-8 " />
-          <h1 className="text-2xl text-black">ARTVILLE</h1>
+          <Link href="/" className="text-2xl text-black">
+            ARTVILLE
+          </Link>
         </div>
         {hamburger && !nav ? (
           <RiMenu3Line
             onClick={() => setnav(!nav)}
             className="cursor-pointer flex text-2xl"
           />
-        ) : (
-          ""
-        )}
-        {/* close icon  */}
-        {nav && (
+        ) : nav ? (
           <RiCloseLine
             onClick={() => setnav(!nav)}
             className="cursor-pointer flex text-3xl"
           />
+        ) : (
+          ""
         )}
 
-        <ul
+        <div
           className={
             nav
-              ? `absolute right-0 top-[100%] bg-white space-y-3 p-5 pl-6 shadow-lg `
-              : ` hidden  gap-12 justify-between lg:flex`
+              ? `absolute right-0 top-[100%] bg-white space-y-3 p-5 pl-6 shadow-lg flex flex-col`
+              : ` hidden gap-12 justify-between lg:flex`
           }
         >
-          <li className="navli">ABOUT US</li>
-          <li className="navli">OUR PROJECTS</li>
-          <li className="navli">GALLERY</li>
-          <li className="navli">PARTNERS</li>
-          <li className="navli">CONTACTS</li>
-        </ul>
+          {navbar.map((item) => (
+            <Link
+              href={item == "home" ? "/" : `/${item.replace(" ", "")}`}
+              key={item}
+              className={`navli ${
+                Path == "/" && item == "home"
+                  ? "font-bold"
+                  : item.replace(" ", "") === Path.replace("/", "") &&
+                    "font-bold"
+              }`}
+            >
+              {item.toUpperCase()}
+            </Link>
+          ))}
+        </div>
       </nav>
     </main>
   );
