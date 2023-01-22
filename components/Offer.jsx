@@ -2,7 +2,7 @@ import React from "react";
 
 export const Offer = () => {
   return (
-    <main className="max-w-[1600px] mx-auto px-4 lg:my-20">
+    <main className="max_width px-4 lg:my-20">
       <h1 className="text-4xl font-bold">WHAT DO WE OFFER</h1>
       <section className="grid lg:grid-cols-2">
         <p className="text-lg my-4">

@@ -13,7 +13,7 @@ export const Header = () => {
         height={1080}
         className="object-cover h-[25rem] lg:h-[35rem] my-4"
       />
-      <div className="flex flex-col gap-8 justify-between px-4 md:flex-row items-end max-w-[1600px] mx-auto">
+      <div className="flex flex-col gap-8 justify-between px-4 md:flex-row items-end max_width">
         <h6 className="text-xl max-w-[50rem]">
           We care about the comfort and safety of our customers. In the
           construction of houses we give preference to modern architecture. Your

@@ -11,6 +11,10 @@
 }
 
 @layer components {
+  // max width
+  .max_width {
+    @apply max-w-[1300px] mx-auto;
+  }
   .navli {
     @apply text-lg cursor-pointer tracking-wider hover:scale-125 lg:text-base;
   }

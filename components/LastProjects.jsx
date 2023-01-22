@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const LastProjects = () => {
   return (
-    <main className="max-w-[1600px] mx-auto px-5 mb-10">
+    <main className="max_width px-5 mb-10">
       <h1 className="text-4xl text-center md:text-left mb-5 font-bold">
         OUR LAST PROJECTS
       </h1>

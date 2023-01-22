@@ -19,7 +19,7 @@ function Navbar() {
 
   return (
     <main className="fixed top-0 bg-white z-50 w-full ">
-      <nav className="border-b-2 border-borderColor flex justify-between items-center max-w-[1600px] mx-auto px-4 py-4 ">
+      <nav className="border-b-2 border-borderColor flex justify-between items-center max_width px-4 py-4 ">
         <div className="flex space-x-3 items-center">
           <div className="rounded-full bg-red h-8 w-8 " />
           <h1 className="text-2xl text-black">ARTVILLE</h1>
