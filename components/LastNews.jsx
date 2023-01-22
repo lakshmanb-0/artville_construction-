@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const LastNews = () => {
   return (
-    <main className="max_width my-10">
+    <main className="max_width py-10">
       <h1 className="font-bold text-5xl px-4">LAST NEWS</h1>
       <section className="NewsSection">
         <div className="leftdiv">

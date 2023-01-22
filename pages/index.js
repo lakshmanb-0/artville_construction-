@@ -20,7 +20,7 @@ export default function Home() {
       <Header />
       <LastProjects />
       <Offer />
-      <div className='max_width my-5'>
+      <div className='max_width mb-10 '>
         <h1 className='text-4xl font-bold px-5'>OUR ADVANTAGES</h1>
         {accordion.map(acc => (
           <Advantages key={acc.id} data={acc} />
