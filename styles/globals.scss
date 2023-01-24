@@ -8,6 +8,9 @@
   body {
     @apply font-poppins text-lightblack;
   }
+  img {
+    @apply object-cover w-full h-full;
+  }
 }
 
 @layer components {
@@ -49,7 +52,7 @@
 
     .leftdiv {
       Image {
-        @apply object-cover w-full h-[20rem];
+        @apply w-full h-[20rem];
       }
     }
     .rightdiv {
