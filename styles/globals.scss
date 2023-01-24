@@ -59,12 +59,31 @@
       @apply font-semibold text-lg mb-8 px-4;
     }
   }
+  // our projects page
+  .ourProjects {
+    .header {
+      @apply flex justify-between py-3 border-b border-borderColor font-semibold text-lg mt-10 mb-7;
+    }
+    .gridtable {
+      @apply grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-5;
+    }
+    img {
+      @apply object-cover;
+    }
+    h6 {
+      @apply font-bold text-lg;
+    }
+    p {
+      @apply font-semibold text-sm mb-3 w-full;
+    }
+  }
+
   // footer section
   .footer {
     @apply md:border-t border-borderColor col-span-2 grid grid-cols-2 md:grid-cols-3;
     ul {
-      @apply py-4 space-y-1;
-      li {
+      @apply py-4 space-y-1 flex flex-col;
+      a {
         @apply hover:scale-110 cursor-pointer hover:font-black;
       }
     }

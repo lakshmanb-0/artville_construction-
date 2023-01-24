@@ -28,7 +28,7 @@ export const LastProjects = () => {
             houses will not become. obsolete after many years.
           </p>
         </div>
-        <section className="flex flex-col items-end ">
+        <section className="flex flex-col md:col-span-2 xl:col-span-1 ">
           <div className="mt-10 border-b border-borderColor px-4 py-4 sm:border rounded max-w-[27rem] mb-10">
             <h6 className="text-xl font-semibold text-black ">NEW PLAZA</h6>
             <Image
