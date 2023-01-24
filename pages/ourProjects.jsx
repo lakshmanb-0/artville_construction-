@@ -137,8 +137,7 @@ const ourProjects = () => {
           <div className="gridtable">
             <Image
               src="
-              https://images.unsplash.com/photo-1472146589133-19a788ecaf89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80
-"
+              https://images.unsplash.com/photo-1472146589133-19a788ecaf89?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80"
               alt="image"
               width={1920}
               height={1080}
@@ -167,8 +166,7 @@ const ourProjects = () => {
               />
               <div className="w-[50%] px-2 mt-8 flex justify-between gap-4 h-full">
                 <Image
-                  src="
-              https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                  src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                   alt="image"
                   width={1920}
                   height={1080}
