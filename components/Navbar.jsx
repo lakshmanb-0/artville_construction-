@@ -3,9 +3,9 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 
-function Navbar() {
+const Navbar = () => {
   const [hamburger, setHamburger] = useState(false);
-  const [nav, setnav] = useState(false);
+  const [nav, setNav] = useState(false);
   const router = useRouter();
   const Path = router.asPath;
   const navbar = ["home", "about Us", "our Projects", "plaza", "contacts"];
@@ -18,7 +18,7 @@ function Navbar() {
         setHamburger(true);
       } else {
         setHamburger(false);
-        setnav(false);
+        setNav(false);
       }
     };
   }, []);
@@ -34,12 +34,12 @@ function Navbar() {
         </div>
         {hamburger && !nav ? (
           <RiMenu3Line
-            onClick={() => setnav(!nav)}
+            onClick={() => setNav(!nav)}
             className="cursor-pointer flex text-2xl"
           />
         ) : nav ? (
           <RiCloseLine
-            onClick={() => setnav(!nav)}
+            onClick={() => setNav(!nav)}
             className="cursor-pointer flex text-3xl"
           />
         ) : (
@@ -50,14 +50,14 @@ function Navbar() {
           className={
             nav
               ? `absolute right-0 top-[100%] bg-white space-y-3 p-5 pl-6 shadow-lg flex flex-col`
-              : ` hidden gap-12 justify-between lg:flex`
+              : `hidden gap-12 justify-between lg:flex`
           }
         >
           {navbar.map((item) => (
             <Link
               href={item == "home" ? "/" : `/${item.replace(" ", "")}`}
               key={item}
-              className={`navli ${
+              className={`navLi ${
                 Path == "/" && item == "home"
                   ? "font-bold"
                   : item.replace(" ", "") === Path.replace("/", "") &&
@@ -71,6 +71,6 @@ function Navbar() {
       </nav>
     </main>
   );
-}
+};
 
 export default Navbar;

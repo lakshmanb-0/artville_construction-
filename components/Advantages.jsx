@@ -9,9 +9,9 @@ const Advantages = ({ data }) => {
   }, []);
   return (
     <>
-      <div className="grid sm:grid-cols-3 px-5 my-5 py-3 border-b sm:border-y border-borderColor">
+      <section className="grid sm:grid-cols-3 px-5 py-3 border-b sm:border-y border-borderColor gap-4 ">
         <p className="text-lg">{data.category}</p>
-        <div className="flex items-center justify-between space-x-10 col-span-2 mt-3 sm:mt-0">
+        <div className="flex items-center justify-between space-x-10 col-span-2">
           <h4 className="text-xl font-semibold">{data.heading}</h4>
           {show ? (
             <AiOutlineMinus
@@ -25,10 +25,10 @@ const Advantages = ({ data }) => {
             />
           )}
         </div>
-      </div>
+      </section>
 
       {show && (
-        <div className="grid lg:grid-cols-3 ">
+        <section className="grid lg:grid-cols-3 lg:px-3 gap-4 ">
           <Image
             src={data.image}
             alt={data.heading}
@@ -37,8 +37,8 @@ const Advantages = ({ data }) => {
             className="w-full h-[20rem] object-cover"
           />
 
-          <p className="px-5 py-5 lg:col-span-2">{data.overview}</p>
-        </div>
+          <p className="px-5 lg:col-span-2">{data.overview}</p>
+        </section>
       )}
     </>
   );

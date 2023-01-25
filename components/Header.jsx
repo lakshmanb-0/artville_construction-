@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-export const Header = () => {
+const Header = () => {
   return (
-    <main className="h-fit w-full pt-[5rem] mb-14 ">
-      <h1 className=" text-[3rem] xl:text-7xl text-center px-3 text-black font-bold">
+    <main className="my-10">
+      <h1 className=" text-[3rem] xl:text-7xl text-center text-black font-bold pt-10">
         WE BUILD LIKE FOR OURSELVES
       </h1>
       <Image
@@ -11,16 +11,17 @@ export const Header = () => {
         alt="header_banner"
         width={1920}
         height={1080}
-        className="object-cover h-[25rem] lg:h-[35rem] my-4"
+        className="h-[25rem] lg:h-[35rem] my-4"
       />
-      <div className="flex flex-col gap-8 justify-between px-4 md:flex-row items-end max_width">
+      <div className=" max_width flex flex-col md:flex-row gap-4 justify-between items-end px-4  ">
         <h6 className="text-xl max-w-[50rem]">
           We care about the comfort and safety of our customers. In the
           construction of houses we give preference to modern architecture. Your
           comfort and safety are our priority.
         </h6>
-        <button className="seemorebtn">REQUEST A CALL</button>
+        <button className="seeMoreBtn">REQUEST A CALL</button>
       </div>
     </main>
   );
 };
+export default Header;

@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply font-poppins text-lightblack;
+    @apply font-poppins text-lightBlack;
   }
   img {
     @apply object-cover w-full h-full;
@@ -18,12 +18,12 @@
   .max_width {
     @apply max-w-[1300px] mx-auto;
   }
-  .navli {
+  .navLi {
     @apply text-lg cursor-pointer tracking-wider hover:scale-125 lg:text-base;
   }
 
-  .seemorebtn {
-    @apply border-b text-sm text-center whitespace-nowrap text-black border-borderColor ml-auto font-semibold mb-5 hover:scale-95;
+  .seeMoreBtn {
+    @apply text-sm whitespace-nowrap text-black border-b border-borderColor ml-auto font-semibold hover:scale-95;
   }
 
   //   offer
@@ -35,10 +35,10 @@
     }
 
     div {
-      @apply flex my-6 sm:flex-col;
+      @apply flex my-6 sm:flex-col gap-4;
 
       h1 {
-        @apply text-5xl font-bold flex-grow;
+        @apply text-5xl font-bold flex-1;
       }
 
       p {
@@ -46,29 +46,27 @@
       }
     }
   }
+
   // news section
   .NewsSection {
-    @apply grid lg:grid-cols-3 gap-3 my-5 py-5 border-t border-borderColor max-w-[1400px] ml-auto space-x-4;
+    @apply grid lg:grid-cols-3 gap-3 py-8 border-t border-borderColor  space-x-4;
 
-    .leftdiv {
-      Image {
-        @apply w-full h-[20rem];
-      }
-    }
-    .rightdiv {
+    .rightDiv {
       @apply lg:col-span-2;
     }
     p {
       @apply font-semibold text-lg mb-8 px-4;
     }
   }
+
   // our projects page
   .ourProjects {
+    @apply py-5;
     .header {
-      @apply flex justify-between py-3 border-b border-borderColor font-semibold text-lg mt-10 mb-7;
+      @apply flex justify-between py-3 border-b border-borderColor font-semibold text-lg pt-5;
     }
-    .gridtable {
-      @apply grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-5;
+    .gridTable {
+      @apply grid md:grid-cols-2 lg:grid-cols-3 gap-8 my-5;
     }
     img {
       @apply object-cover;
@@ -81,11 +79,23 @@
     }
   }
 
+  //contact page
+  .contactDiv {
+    @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 border-b border-borderColor py-4 items-center text-sm gap-2 md:space-y-4;
+
+    h1 {
+      @apply font-bold text-xl col-span-2 md:col-span-1 pt-2;
+    }
+    button {
+      @apply seeMoreBtn mx-auto mb-0 w-fit md:col-span-2 lg:col-span-1;
+    }
+  }
+
   // footer section
   .footer {
-    @apply md:border-t border-borderColor col-span-2 grid grid-cols-2 md:grid-cols-3;
+    @apply md:border-t border-borderColor col-span-2 grid grid-cols-2 md:grid-cols-3 gap-4;
     ul {
-      @apply py-4 space-y-1 flex flex-col;
+      @apply py-3 space-y-1 flex flex-col;
       a {
         @apply hover:scale-110 cursor-pointer hover:font-black;
       }

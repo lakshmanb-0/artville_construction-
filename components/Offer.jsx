@@ -1,9 +1,9 @@
-export const Offer = () => {
+const Offer = () => {
   return (
-    <main className="max_width px-4 my-20">
+    <main className="max_width px-4 py-10">
       <h1 className="text-4xl font-bold">WHAT DO WE OFFER</h1>
-      <section className="grid lg:grid-cols-2">
-        <p className="text-lg my-4">
+      <section className="grid lg:grid-cols-2 gap-4">
+        <p className="text-lg ">
           {`New technologies and thoughtful design that's about us! Take a look at
         this`}
         </p>
@@ -41,3 +41,4 @@ export const Offer = () => {
     </main>
   );
 };
+export default Offer;

@@ -1,15 +1,15 @@
-import Head from 'next/head'
-import { Header } from '../components/Header'
-import { LastProjects } from '../components/LastProjects'
-import Navbar from '../components/Navbar'
-import { Offer } from '../components/Offer'
-import Advantages from '../components/Advantages'
-import { accordion } from '../Data/data'
-import { LastNews } from '../components/LastNews'
-import Services from '../components/Services'
-import Footer from '../components/Footer'
+import Head from "next/head";
+import Header from "../components/Header";
+import LastProjects from "../components/LastProjects";
+import Navbar from "../components/Navbar";
+import Offer from "../components/Offer";
+import Advantages from "../components/Advantages";
+import { accordion } from "../Data/data";
+import LastNews from "../components/LastNews";
+import Services from "../components/Services";
+import Footer from "../components/Footer";
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
@@ -22,17 +22,16 @@ export default function Home() {
       <Header />
       <LastProjects />
       <Offer />
-      <div className='max_width my-10 '>
-        <h1 className='text-4xl font-bold px-5'>OUR ADVANTAGES</h1>
-        {accordion.map(acc => (
+      <div className="max_width my-10 space-y-6 ">
+        <h1 className="text-4xl font-bold px-4">OUR ADVANTAGES</h1>
+        {accordion.map((acc) => (
           <Advantages key={acc.id} data={acc} />
         ))}
       </div>
       <LastNews />
       <Services />
       <Footer />
-
-
     </>
-  )
-}
+  );
+};
+export default Home;

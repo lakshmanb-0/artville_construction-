@@ -1,21 +1,22 @@
 import Image from "next/image";
 
-export const LastNews = () => {
+const LastNews = () => {
   return (
     <main className="max_width py-10">
       <h1 className="font-bold text-5xl px-4">LAST NEWS</h1>
       <section className="NewsSection">
-        <div className="leftdiv">
+        <div>
           <p>25 September 2022</p>
-          <Image
-            src="https://images.unsplash.com/photo-1504450075628-39777da238ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
-            alt="Loading..."
-            width={1920}
-            height={1080}
-            className="newsImg"
-          />
+          <div className="h-[20rem]">
+            <Image
+              src="https://images.unsplash.com/photo-1504450075628-39777da238ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"
+              alt="Loading..."
+              width={1920}
+              height={1080}
+            />
+          </div>
         </div>
-        <div className="rightdiv">
+        <div className="rightDiv">
           <p>New investor and development by 2023</p>
           <span>
             The effectiveness of a business largely depends on the team that the
@@ -34,20 +35,21 @@ export const LastNews = () => {
         </div>
       </section>
       <section className="NewsSection">
-        <div className="leftdiv">
+        <div>
           <p>8 July 2022</p>
-          <Image
-            src="https://images.unsplash.com/photo-1610637988384-3154e5644f4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            alt="Loading..."
-            width={1920}
-            height={1080}
-            className="newsImg"
-          />
+          <div className="h-[20rem]">
+            <Image
+              src="https://images.unsplash.com/photo-1610637988384-3154e5644f4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="Loading..."
+              width={1920}
+              height={1080}
+            />
+          </div>
         </div>
-        <div className="rightdiv">
+        <div className="rightDiv">
           <p>Our partners opened a new shopping center</p>
           <span>
-            In the north-east of the site is a new shopping center Multiplaza,
+            In the north-east of the site is a new shopping center MultiPlaza,
             which fit perfectly into commercial infrastructure. On July 8 the
             Center group of companies was open a new shopping centers with a
             total area of 120,000 square meters, the press service has said. The
@@ -59,17 +61,18 @@ export const LastNews = () => {
         </div>
       </section>
       <section className="NewsSection">
-        <div className="leftdiv">
+        <div>
           <p>18 April 2022</p>
-          <Image
-            src="https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-            alt="Loading..."
-            width={1920}
-            height={1080}
-            className="newsImg"
-          />
+          <div className="h-[20rem]">
+            <Image
+              src="https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="Loading..."
+              width={1920}
+              height={1080}
+            />
+          </div>
         </div>
-        <div className="rightdiv">
+        <div className="rightDiv">
           <p>
             The sale of elite apartments in the New Plaza complex has begun.
           </p>
@@ -92,3 +95,4 @@ export const LastNews = () => {
     </main>
   );
 };
+export default LastNews;
