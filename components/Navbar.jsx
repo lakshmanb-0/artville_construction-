@@ -2,6 +2,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
+import { motion } from "framer-motion";
+import { navAnimate } from "../motion";
 
 const Navbar = () => {
   const [hamburger, setHamburger] = useState(false);
@@ -24,7 +26,12 @@ const Navbar = () => {
   }, []);
 
   return (
-    <main className="fixed top-0 bg-white z-50 w-full ">
+    <motion.div
+      variants={navAnimate}
+      initial="hidden"
+      whileInView="show"
+      className="fixed top-0 bg-white z-50 w-full "
+    >
       <nav className="border-b-2 border-borderColor flex justify-between items-center max_width px-4 py-4 ">
         <div className="flex space-x-3 items-center">
           <div className="rounded-full bg-red h-8 w-8 " />
@@ -69,7 +76,7 @@ const Navbar = () => {
           ))}
         </div>
       </nav>
-    </main>
+    </motion.div>
   );
 };
 
